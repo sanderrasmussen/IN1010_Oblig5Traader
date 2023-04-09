@@ -18,12 +18,10 @@ public class Oblig5Del1 {
 	
 			//lage en loop og for alle maps så skal jeg slå dem sammen
 			while (subsekvensregister.antallHashMap()!=1){
-				for (int i = 0; i< subsekvensregister.antallHashMap();i++){
-					HashMap<String, Subsekvens> mapEn = subsekvensregister.taUtHashMap(i);
-					HashMap<String, Subsekvens> mapTo = subsekvensregister.taUtHashMap(i);
+					HashMap<String, Subsekvens> mapEn = subsekvensregister.taUtHashMap(0);
+					HashMap<String, Subsekvens> mapTo = subsekvensregister.taUtHashMap(0);
 					HashMap<String, Subsekvens> nyHashMap = subsekvensregister.slaaSammenMaps(mapEn, mapTo);
 					subsekvensregister.settInnSubsekvensMap(nyHashMap);
-				}
 			}
 			
 		}

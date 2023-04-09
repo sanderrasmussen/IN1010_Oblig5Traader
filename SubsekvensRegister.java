@@ -25,7 +25,7 @@ public class SubsekvensRegister {
 		return hashmaps.size();
 	}
 	
-	public static HashMap<String, Subsekvens> LesFilLagMap(String filnavn) {
+	public HashMap<String, Subsekvens> LesFilLagMap(String filnavn) {
 		HashMap<String, Subsekvens> hashmap = new HashMap<>();
 		try {
 			File fil = new File(filnavn);
@@ -58,7 +58,7 @@ public class SubsekvensRegister {
 		return null; //dersom hashmap er tom
 	}
 	
-	public static HashMap<String, Subsekvens> slaaSammenMaps(HashMap<String, Subsekvens> mapEn, HashMap<String, Subsekvens> mapTo){
+	public HashMap<String, Subsekvens> slaaSammenMaps(HashMap<String, Subsekvens> mapEn, HashMap<String, Subsekvens> mapTo){
 		HashMap<String, Subsekvens> returMap = new HashMap<>();
 		
 		// for alle nøkler i map 1 hvis samme ikke finnes i map2 så legg subsekvens med antall 2 i Ny map
@@ -76,6 +76,18 @@ public class SubsekvensRegister {
 		//NB1
 		//I dette tilfellet skal de gamle HashMap-ene og Subsekvens-objektene ikke brukes videre, så du
 		//kan gjerne oppdatere disse til bruk i den sammenslåtte HashMap-en. 
+	}
+	@Override
+	public String toString(){
+		String string = "";
+		for (int i = 0 ; i< antallHashMap();i++){
+			System.out.println("printer fra neste fil:");
+			for (Entry<String, Subsekvens> map : taUtHashMap(i).entrySet()) {
+				string+="\n"+map;
+			}
+			
+		}
+		return string;
 	}
 }
 

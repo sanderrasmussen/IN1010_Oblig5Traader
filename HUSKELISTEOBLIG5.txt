@@ -1,0 +1,17 @@
+
+NB! DETTE HAR JEG IKKE GJORT : oppgave 8 siste oppgavetekst:
+    Hvis du ønsker å levere dette programmet, legg main-metoden i en klasse du kaller
+    Oblig5Del2A.java og sørg for at dette programmet kan kjøres i den mappen du leverer. Kall
+    mappen Oblig5Del2A og zip den. Bruk de samme test-filene og utskrift som i oppgave 5 (men
+    ikke lever data- eller .class-filer). Retteren din skal kunne kompilere og kjøre programmet ditt og
+    bruke stien (folder og filnavn) til sine datafiler som parameter til programmet.
+
+OPPGAVE 9
+    Antall tråder av trådklassen FletteTrad skal være en konstant i programmet ditt som du
+    kan sette til 8. 
+
+PER NÅ:
+jeg sitter fast ved at jeg tror det har oppstått en vranglås der tradene venter på signal men ingen er i stand til å gi signal
+Hvordan skal jeg vite at det bare er 1 hashmap igjen? 
+
+antallMaps-1 er antall operasjoner som trengs for å vite at tradene er ferdige
